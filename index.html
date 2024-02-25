@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử giá</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assest/reset.css">
+    <link rel="stylesheet" href="./assest/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="heading">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="./assest/imgs/Logo-Dstock.svg" alt="logo">
+            </div>
+            <form action="" class="form">
+                <div class="form__search">
+                    <img src="./assest/imgs/search-icon.svg" alt="">
+                </div>
+                <input class="form__input" type="text" placeholder="Tìm kiếm mã">
+            </form>
+            <div class="navbar">
+                <a href="">Trang chủ/ Thị trường</a>
+                <a href="">Dữ liệu chuyên sâu</a>
+                <a href="">Trung tâm phân tích</a>
+                <a href="">Tin Tức</a>
+                <a href="">Đăng nhập / Mở tài khoản</a>
+            </div>
+            <div class="language">
+                <img src="./assest/imgs/vi.png" alt="">
+            </div>
+            <button class="day-night">
+                <div class="day-night__action"></div>
+            </button>
+        </div>
+    </header>
+
+    <section class="stock">
+
+    </section>
+
+    <section class="data-maket">
+        <div class="container">
+            <div class="data-maket__navbar">
+                <a href="">Dữ liệu thị trường</a>
+                <a href="">So sánh các thị trường</a>
+                <a href="">định giá thị trường</a>
+                <a href="">Phân bổ thị trường</a>
+            </div>
+            <div class="data-maket__slice">
+
+            </div>
+            <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:475px;width:100%">
+    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    var chart = {
+    "autosize": true,
+    "symbol": "HOSE:VNINDEX",
+    "interval": "D",
+    "timezone": "Etc/UTC",
+    "theme": "dark",
+    "style": "1",
+    "locale": "en",
+    "enable_publishing": false,
+    "allow_symbol_change": true,
+    "calendar": false,
+    "support_host": "https://www.tradingview.com"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+            
+        </div>
+    </section>
+
+    <section class="history-price">
+        <div class="container">
+            <h2 class="statistical">Thống kê thị trường</h2>
+            <div class="history-price__inner">
+                <a href="">Lịch sử giá</a>
+                <a href="">Giao dịch nhà đầu tư nước ngoài</a>
+            </div>
+            <div class="history-price__slice">
+
+            </div>
+            <form action="" class="history-price__form">
+                <select>
+                    <option value="volvo">VNIndex</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                  <input type="text" placeholder="Từ ngày">
+                  <input type="text" placeholder="Đến ngày">
+                  <button>Tìm kiếm</button>
+            </form>
+
+            <div class="history-price__slice">
+
+            </div>
+            <table>
+                <tr>
+                    <th>Ngày</th>
+                    <th>Thay đổi</th>
+                    <th>Giá mở cửa</th>
+                    <th>Giá thấp nhất</th>
+                    <th>Giá cao nhát</th>
+                    <th>Giá đóng cửa</th>
+                    <th>Khối lượng khớp lệnh</th>
+                    <th>Khối lượng thỏa thuận</th>
+                </tr>
+                <tr>
+                    <td>23/02/2024</td>
+                    <td class="change-red">-15.31<br/>
+                        (-1.25%)</td>
+                    <td>1,230.30</td>
+                    <td>1,211.55</td>
+                    <td>1,240.81</td>
+                    <td>1,212.00</td>
+                    <td>1,327,900,592</td>
+                    <td>66,616,320</td>
+                </tr>
+                <tr>
+                    <td>23/02/2024</td>
+                    <td class="change-red">-15.31<br/>
+                        (-1.25%)</td>
+                    <td>1,230.30</td>
+                    <td>1,211.55</td>
+                    <td>1,240.81</td>
+                    <td>1,212.00</td>
+                    <td>1,327,900,592</td>
+                    <td>66,616,320</td>
+                </tr>
+                <tr>
+                    <td>23/02/2024</td>
+                    <td class="change-green">-15.31<br/>
+                        (-1.25%)</td>
+                    <td>1,230.30</td>
+                    <td>1,211.55</td>
+                    <td>1,240.81</td>
+                    <td>1,212.00</td>
+                    <td>1,327,900,592</td>
+                    <td>66,616,320</td>
+                </tr>
+                <tr>
+                    <td>23/02/2024</td>
+                    <td class="change-red">-15.31<br/>
+                        (-1.25%)</td>
+                    <td>1,230.30</td>
+                    <td>1,211.55</td>
+                    <td>1,240.81</td>
+                    <td>1,212.00</td>
+                    <td>1,327,900,592</td>
+                    <td>66,616,320</td>
+                </tr>
+                <tr>
+                    <td>23/02/2024</td>
+                    <td class="change-green">-15.31<br/>
+                        (-1.25%)</td>
+                    <td>1,230.30</td>
+                    <td>1,211.55</td>
+                    <td>1,240.81</td>
+                    <td>1,212.00</td>
+                    <td>1,327,900,592</td>
+                    <td>66,616,320</td>
+                </tr>
+                <tr>
+                    <td>23/02/2024</td>
+                    <td class="change-green">-15.31<br/>
+                        (-1.25%)</td>
+                    <td>1,230.30</td>
+                    <td>1,211.55</td>
+                    <td>1,240.81</td>
+                    <td>1,212.00</td>
+                    <td>1,327,900,592</td>
+                    <td>66,616,320</td>
+                </tr>
+                <tr>
+                    <td>23/02/2024</td>
+                    <td class="change-red">-15.31<br/>
+                        (-1.25%)</td>
+                    <td>1,230.30</td>
+                    <td>1,211.55</td>
+                    <td>1,240.81</td>
+                    <td>1,212.00</td>
+                    <td>1,327,900,592</td>
+                    <td>66,616,320</td>
+                </tr>
+                <tr>
+                    <td>23/02/2024</td>
+                    <td class="change-red">-15.31<br/>
+                        (-1.25%)</td>
+                    <td>1,230.30</td>
+                    <td>1,211.55</td>
+                    <td>1,240.81</td>
+                    <td>1,212.00</td>
+                    <td>1,327,900,592</td>
+                    <td>66,616,320</td>
+                </tr>
+
+            </table>
+        </div>
+    </section>
+    <section class="introduce">
+        <div class="container">
+            <div class="introduce-inner">
+                <div class="logo">
+                    <img src="./assest/imgs/Logo-Dstock.svg" alt="logo">
+                </div>
+                <div class="introduce-company">
+                    <img src="./assest/imgs/icon-map.svg" alt="">
+                    <div class="introduce-company__inner">
+                        <h3 class="introduce-company__vndrect">
+                            Công ty CP Chứng khoán VNDIRECT
+                        </h3>
+                        <p class="introduce-company__slogan">Hội tụ trí tuệ - Lan tỏa thành công</p>
+                    </div>
+                </div>
+                <div class="introduce-phone">
+                    <img src="./assest/imgs/icon-phone.svg" alt="">
+                    <div class="introduce-phone__inner">
+                        <h3>
+                            Điện thoại
+                        </h3>
+                        <a href="">1900 5454 09</a>
+                    </div>
+                </div>
+                <div class="introduce-email">
+                    <img src="./assest/imgs/icon-email.svg" alt="">
+                    <div class="introduce-email__inner">
+                        <h3>
+                            Email
+                        </h3>
+                        <a href="">support@vndirect.com.vn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce__slice">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <footer class="footer-inner">
+                <p>Các công thức được tính toán dựa trên công thức theo lựa chọn và quan điểm của VNDIRECT, và có thể không nhất thiết trùng khớp với các nguồn thông tin khác.</p>
+                <p>Dữ liệu thực tế tùy thuộc vào cung cấp của bên thứ 3, và chỉ mang giá trị tham khảo. Dstock miễn trách nhiệm với tất cả kết quả giao dịch được hình thành từ dữ liệu của Dstock</p>
+                <p>©Bản quyền thuộc Công ty Cổ phần Chứng khoán VNDIRECT</p>
+            </footer>
+        </div>
+    </footer>
+</body>
+</html>
